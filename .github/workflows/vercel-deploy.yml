@@ -18,4 +18,4 @@ jobs:
           vercel-project-id: ${{ secrets.PROJECT_ID }}
           vercel-project-name: ${{ secrets.PROJECT_NAME }}
     outputs:
-      preview-url: ${{ secrets.PREVIEW_URL }}
+      preview-url: "https://chiraags-component-library.vercel.app/"
