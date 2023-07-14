@@ -13,7 +13,7 @@ jobs:
       - uses: amondnet/vercel-action@v20
         id: vercel-deployment
         with:
-          vercel-token: "UG4ltFpPg40171ckUpellVoT"
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: "H9Y9VcUv0Wnsi5ti7ILjRgOh"
           vercel-project-id: "prj_hZNEEEMndd9YbSwXmMrSfwfG3frv"
           vercel-project-name: "chiraags-component-library"
