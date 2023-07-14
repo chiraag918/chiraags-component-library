@@ -14,29 +14,8 @@ jobs:
         id: vercel-deployment
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: "H9Y9VcUv0Wnsi5ti7ILjRgOh"
-          vercel-project-id: "prj_hZNEEEMndd9YbSwXmMrSfwfG3frv"
-          vercel-project-name: "chiraags-component-library"
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
+          vercel-project-name: ${{ secrets.PROJECT_NAME }}
     outputs:
-      preview-url: "https://chiraags-component-library.vercel.app/"
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v2
-
-#       - name: Set up Node.js
-#         uses: actions/setup-node@v2
-#         with:
-#           node-version: 14
-
-#       - name: Install dependencies
-#         run: npm i
-
-#       - name: Build
-#         run: npm run build
-
-#       - name: Deploy to Vercel
-#         run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
+      preview-url: ${{ secrets.PREVIEW_URL }}
