@@ -8,21 +8,34 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: amondnet/vercel-action@v20
+        id: vercel-deployment
         with:
-          node-version: 14
+          vercel-token: "UG4ltFpPg40171ckUpellVoT"
+          vercel-project-id: "prj_hZNEEEMndd9YbSwXmMrSfwfG3frv"
+          vercel-project-name: "chiraags-component-library"
+    outputs:
+      preview-url: "https://chiraags-component-library.vercel.app/"
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
 
-      - name: Install dependencies
-        run: npm i
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      - name: Build
-        run: npm run build
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: 14
 
-      - name: Deploy to Vercel
-        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
+#       - name: Install dependencies
+#         run: npm i
+
+#       - name: Build
+#         run: npm run build
+
+#       - name: Deploy to Vercel
+#         run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod
