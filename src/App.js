@@ -15,7 +15,7 @@ function App() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Chiraag's Cool Component library
+					Chiraag Cool Component library
 				</a>
 			</header>
 		</div>
