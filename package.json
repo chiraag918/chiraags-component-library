@@ -1,56 +1,102 @@
 {
-  "name": "chiraags-component-library",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@storybook/addon-essentials": "^7.0.27",
-    "@storybook/addon-interactions": "^7.0.27",
-    "@storybook/addon-links": "^7.0.27",
-    "@storybook/blocks": "^7.0.27",
-    "@storybook/preset-create-react-app": "^7.0.27",
-    "@storybook/react": "^7.0.27",
-    "@storybook/react-webpack5": "^7.0.27",
-    "@storybook/testing-library": "^0.0.14-next.2",
-    "babel-plugin-named-exports-order": "^0.0.2",
-    "eslint-plugin-storybook": "^0.6.12",
-    "prop-types": "^15.8.1",
-    "storybook": "^7.0.27",
-    "webpack": "^5.88.1"
-  }
+	"name": "@chiraag918/chiraags-component-library",
+	"main": "src/index.js",
+	"version": "1.0.0",
+	"license": "MIT",
+	"description": "Custom component library for React framework",
+	"keywords": [
+		"react",
+		"rollup",
+		"storybook",
+		"components"
+	],
+	"author": "Chiraag A",
+	"people": {
+		"name": "Chiraag A",
+		"email": "chiraag@chiraag.dev",
+		"url": "http://chiraag.dev"
+	},
+	"homepage": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chiraag918/chiraags-component-library"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/@chiraag918"
+	},
+	"bugs": {
+		"url": "https://github.com/chiraag918/chiraags-component-library/issues"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "rollup -c",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.22.6",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-scripts": "5.0.1",
+		"web-vitals": "^2.1.4"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.22.9",
+		"@babel/core": "^7.22.9",
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+		"@babel/plugin-transform-runtime": "^7.22.9",
+		"@babel/preset-env": "^7.22.9",
+		"@rollup/plugin-commonjs": "^25.0.3",
+		"@rollup/plugin-node-resolve": "^15.1.0",
+		"@storybook/addon-essentials": "^7.0.27",
+		"@storybook/addon-interactions": "^7.0.27",
+		"@storybook/addon-links": "^7.0.27",
+		"@storybook/blocks": "^7.0.27",
+		"@storybook/preset-create-react-app": "^7.0.27",
+		"@storybook/react": "^7.0.27",
+		"@storybook/react-webpack5": "^7.0.27",
+		"@storybook/testing-library": "^0.0.14-next.2",
+		"autoprefixer": "^10.4.14",
+		"babel-plugin-named-exports-order": "^0.0.2",
+		"babel-preset-react": "^6.24.1",
+		"eslint-plugin-storybook": "^0.6.12",
+		"node-sass": "^7.0.3",
+		"postcss": "^8.4.27",
+		"postcss-scss": "^4.0.6",
+		"prop-types": "^15.8.1",
+		"rollup": "^2.79.1",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-styles": "^4.0.0",
+		"storybook": "^7.0.27",
+		"webpack": "^5.88.1"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest",
+			"plugin:storybook/recommended"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }

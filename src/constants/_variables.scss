@@ -1,0 +1,111 @@
+// MEDIA BREAKPOINTS
+$MediaXxs: 220px;
+$MediaXs: 576px;
+$MediaSm: 767px;
+$MediaMd: 992px;
+$MediaLg: 1024px;
+$MediaXl: 1600px;
+$MediaXxl: 1920px;
+
+$MediaScreenXxl: "only screen and (min-width: #{$MediaXxl})"; // 1920+
+$MediaScreenXl: "only screen and (min-width: #{$MediaXl}) and (max-width: #{$MediaXxl})"; //1600 - 1919
+$MediaScreenLg: "only screen and (min-width: #{$MediaLg}) and (max-width: #{$MediaXl})"; // 1024 - 1599
+$MediaScreenMd: "only screen and (min-width: #{$MediaMd}) and (max-width: #{$MediaLg})"; // 992 - 1023
+$MediaScreenSm: "only screen and (min-width: #{$MediaSm}) and (max-width: #{$MediaMd})"; // 768 - 991
+$MediaScreenXs: "only screen and (min-width: #{$MediaXs}) and (max-width: #{$MediaSm})"; // 576 - 767
+$MediaScreenXxs: "only screen and (min-width: #{$MediaXxs}) and (max-width: #{$MediaXs})"; // 220 - 575
+
+//Z-Index
+$ZINDEX_10: 10;
+$ZINDEX_99: 99;
+$ZINDEX_999: 999;
+
+// CONSTANT COLOR CODES
+$BLACK: #000000;
+$BLACK_2: #0000000f;
+$BLACK_2_24: #00000024;
+$BLACK_2_33: #00000033;
+$BLACK_2_80: #00000080;
+$BLACK_3: #0000001f;
+$BLACK_4: #00000042;
+$BLACK_5: #00000014;
+$BLACK_6: #ffffff00;
+$WHITE: #ffffff;
+$WHITE_2: #ecf2ff;
+$WHITE_3: #f2f7ff;
+$WHITE_4: #ececec;
+$WHITE_5: #ffffffcc;
+$GREY_1: #8f8f8f;
+$GREY_2: #444444;
+$GREY_3: #f6f6f6;
+$GREY_4: #dfdfdf;
+$GREY_5: #c7c7c7;
+$GREY_6: #b0b0b033;
+$GREY_7: #666666;
+$GREY_8: #888888;
+$PURPLE_1: #8c69ff;
+$PURPLE_2: #f1edff;
+$PURPLE_3: #f2edff;
+$PURPLE_4: #7f5cf4;
+$PURPLE_5: #d9cdff;
+$RED_1: #ff5959;
+$BLUE_1: #5992ff;
+$GREEN_1: #84cc6a;
+$GREEN_2: #e5f2ff;
+$PINK_1: #ff73a1;
+$ORANGE_1: #ff8f1f;
+
+:export {
+  BLACK: $BLACK;
+  BLACK_2: $BLACK_2;
+  WHITE: $WHITE;
+  WHITE_2: $WHITE_2;
+  WHITE_3: $WHITE_3;
+  WHITE_4: $WHITE_4;
+  BLACK_5: $BLACK_5;
+  GREY_1: $GREY_1;
+  GREY_2: $GREY_2;
+  GREY_3: $GREY_3;
+  GREY_4: $GREY_4;
+  GREY_5: $GREY_5;
+  GREY_6: $GREY_6;
+  GREY_7: $GREY_7;
+  GREY_8: $GREY_8;
+  PURPLE_1: $PURPLE_1;
+  PURPLE_2: $PURPLE_2;
+  PURPLE_3: $PURPLE_3;
+  PURPLE_4: $PURPLE_4;
+  PURPLE_5: $PURPLE_5;
+  RED_1: $RED_1;
+  BLUE_1: $BLUE_1;
+  GREEN_1: $GREEN_1;
+  GREEN_2: $GREEN_2;
+  PINK_1: $PINK_1;
+  ORANGE_1: $ORANGE_1;
+  WHITE_5: $WHITE_5;
+  BLACK_6: $BLACK_6;
+}
+
+@mixin flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-justify-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
