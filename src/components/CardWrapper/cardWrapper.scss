@@ -1,0 +1,41 @@
+@import "../../constants/_variables.scss";
+
+.cardWrapper__container {
+  min-width: 350px;
+  min-height: 50px;
+  background-color: $WHITE;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.cardWrapper-custom-storybook__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media #{$MediaScreenMd} {
+  .cardWrapper__container {
+    width: 300px;
+  }
+}
+
+@media #{$MediaScreenSm} {
+  .cardWrapper__container {
+    width: 230px;
+  }
+}
+
+@media #{$MediaScreenXs} {
+  .cardWrapper__container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media #{$MediaScreenXxs} {
+  .cardWrapper__container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
