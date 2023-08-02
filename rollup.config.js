@@ -34,6 +34,7 @@ var config = [
 			babel({
 				exclude: "node_modules/**",
 				plugins: ["@babel/transform-runtime"],
+				presets: ["@babel/preset-react", "@babel/preset-env"],
 				babelHelpers: "runtime",
 			}),
 			// this adds support for styles
