@@ -43,6 +43,7 @@ MODE.map((m) => {
 			// these are babel configurations
 			babel({
 				exclude: "node_modules/**",
+				presets: ["@babel/preset-env", "@babel/preset-react"],
 				plugins: ["@babel/transform-runtime"],
 				babelHelpers: "runtime",
 			}),
