@@ -11,12 +11,6 @@ var MODE = [
 	{
 		fomart: "cjs",
 	},
-	{
-		fomart: "esm",
-	},
-	{
-		fomart: "umd",
-	},
 ];
 
 var config = [];
