@@ -3,7 +3,6 @@ import babel from "@rollup/plugin-babel";
 import styles from "rollup-plugin-styles";
 import commonjs from "@rollup/plugin-commonjs";
 import nodeResolve from "@rollup/plugin-node-resolve";
-import sourcemaps from "rollup-plugin-sourcemaps";
 
 // the entry point for the library
 const input = "src/index.js";
@@ -25,17 +24,15 @@ var config = [
 				include: /node_modules/,
 			}),
 			nodeResolve({
-				jsnext: true,
-				main: true,
-				browser: true,
+				extensions: [".js", ".jsx"],
 			}),
-			sourcemaps(),
 			// these are babel configurations
 			babel({
 				exclude: "node_modules/**",
 				plugins: ["@babel/transform-runtime"],
 				presets: ["@babel/preset-react", "@babel/preset-env"],
 				babelHelpers: "runtime",
+				extensions: [".js", ".ts", ".jsx", ".tsx"],
 			}),
 			// this adds support for styles
 			styles({

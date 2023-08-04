@@ -1,10 +1,8 @@
-import { CardWrapper } from "./components/CardWrapper";
-
-import "./index.css";
+import { CardWrapperComponent } from "./components/CardWrapper";
 
 const returnComponents = () => {
 	return {
-		CardWrapper: CardWrapper,
+		CardWrapper: CardWrapperComponent,
 	};
 };
 export default returnComponents();
