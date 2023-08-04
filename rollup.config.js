@@ -7,27 +7,15 @@ import nodeResolve from "@rollup/plugin-node-resolve";
 // the entry point for the library
 const input = "src/index.js";
 
-var MODE = [
+var config = [
 	{
-		fomart: "cjs",
-	},
-];
-
-var config = [];
-
-MODE.map((m) => {
-	var conf = {
 		input: input,
 		output: {
 			// then name of the package
 			name: "chiraag's-component-library",
-			file: `dist/index.${m.fomart}.js`,
-			format: m.fomart,
+			file: `dist/index.cjs.js`,
+			format: "cjs",
 			exports: "auto",
-			globals: {
-				react: "React", // If library relies on React, provide global variable name
-				"react-dom": "ReactDOM", // If library relies on ReactDOM, provide global variable name
-			},
 		},
 		// this externelizes react to prevent rollup from compiling it
 		external: ["react", "react-dom", /@babel\/runtime/, "prop-types"],
@@ -36,16 +24,15 @@ MODE.map((m) => {
 				include: /node_modules/,
 			}),
 			nodeResolve({
-				jsnext: true,
-				main: true,
-				browser: true,
+				extensions: [".js", ".jsx"],
 			}),
 			// these are babel configurations
 			babel({
 				exclude: "node_modules/**",
-				presets: ["@babel/preset-env", "@babel/preset-react"],
 				plugins: ["@babel/transform-runtime"],
+				presets: ["@babel/preset-react", "@babel/preset-env"],
 				babelHelpers: "runtime",
+				extensions: [".js", ".ts", ".jsx", ".tsx"],
 			}),
 			// this adds support for styles
 			styles({
@@ -54,8 +41,7 @@ MODE.map((m) => {
 				},
 			}),
 		],
-	};
-	return config.push(conf);
-});
+	},
+];
 
-export default config;
+export default [...config];
