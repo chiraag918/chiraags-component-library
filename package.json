@@ -1,7 +1,7 @@
 {
 	"name": "@chiraag918/chiraags-component-library",
-	"main": "src/index.js",
-	"version": "1.0.6",
+	"main": "dist/index.cjs.js",
+	"version": "1.1.0",
 	"license": "MIT",
 	"description": "Custom component library for React framework",
 	"keywords": [
