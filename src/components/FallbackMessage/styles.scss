@@ -1,0 +1,30 @@
+@import "../../constants/_variables.scss";
+
+.fallback-ui__wrapper {
+  height: inherit;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  .fallback-ui__icon {
+    margin-bottom: 16px;
+  }
+  .fallback-ui__message {
+    color: $GREY_8;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fallback-ui__messageWithIcon {
+    font-size: 16px;
+  }
+}
+@media #{$MediaScreenXxs} {
+  .fallback-ui__wrapper {
+    .fallback-ui__messageWithIcon {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../constants/_variables.scss";
+
+.videoPlayer__wrapper {
+  height: 100%;
+  width: 100%;
+  .shaka-video-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.videoPlayer--testClass {
+  left: 15%;
+  width: 70% !important;
+  height: 90vh !important;
+}
