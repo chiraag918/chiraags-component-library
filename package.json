@@ -1,7 +1,7 @@
 {
 	"name": "@chiraag918/chiraags-component-library",
 	"main": "dist/index.cjs.js",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"license": "MIT",
 	"description": "Custom component library for React framework",
 	"keywords": [
@@ -35,7 +35,8 @@
 	},
 	"dependencies": {
 		"@babel/runtime": "^7.22.6",
-		"@rollup/plugin-node-resolve": "^15.1.0"
+		"@rollup/plugin-node-resolve": "^15.1.0",
+		"shaka-player": "^4.2.3"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",

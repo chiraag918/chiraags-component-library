@@ -1,0 +1,36 @@
+@import "../../constants/_variables.scss";
+
+.make-cards-swappable {
+  padding: 1rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  .swappable-inner-div {
+    margin: 0px -5px;
+  }
+}
+.make-cards-swappable::-webkit-scrollbar {
+  display: block;
+  height: 4px;
+}
+.make-cards-swappable::-webkit-scrollbar-track {
+  background: $WHITE;
+  border-radius: 20px;
+}
+.make-cards-swappable::-webkit-scrollbar-thumb {
+  background-color: $PURPLE_5;
+  border-radius: 20px;
+}
+
+@media (orientation: landscape) {
+  .make-cards-swappable::-webkit-scrollbar-track {
+    margin-right: min(38vw, 42vw);
+    margin-left: min(38vw, 42vw);
+  }
+}
+
+@media (orientation: portrait) {
+  .make-cards-swappable::-webkit-scrollbar-track {
+    margin-right: min(38vw, 42vw);
+    margin-left: min(38vw, 42vw);
+  }
+}

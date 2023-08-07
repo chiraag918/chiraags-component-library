@@ -1,0 +1,41 @@
+@import "../../constants/_variables.scss";
+
+.loader__container {
+  @include flex-justify-around;
+  z-index: 999;
+  height: 100%;
+  background-color: $WHITE_5;
+  flex: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  .loader__view {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px solid $GREY_4;
+    border-top-color: $PURPLE_1;
+    animation: 1s infinite loader_animation;
+  }
+}
+
+.loader--relative {
+  position: relative;
+}
+.loader--absolute {
+  position: absolute !important;
+}
+.loader--transparent {
+  background-color: $BLACK_6;
+}
+
+@keyframes loader_animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

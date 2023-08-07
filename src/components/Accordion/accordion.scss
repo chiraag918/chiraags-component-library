@@ -1,0 +1,42 @@
+@import "../../constants/_variables.scss";
+
+.accordion__wrapper {
+  color: $GREY_2;
+  min-width: 250px;
+  scroll-margin-bottom: 20px;
+
+  .accordion__header {
+    @include flex-container;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    justify-content: space-between;
+    transition: border-radius ease-out 0.8s;
+
+    .accordion__btn {
+      @include flex-container;
+      transition: transform ease-out 0.2s;
+      cursor: pointer;
+    }
+  }
+
+  .accordion__open-status__header {
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .accordion__container {
+    overflow: hidden;
+    border-radius: 0px 0px 16px 16px;
+    transition: max-height 0.2s ease-out;
+  }
+}
+
+// Using these classes for storybook UI
+.accordion-custom-storybook__header {
+  background-color: $PURPLE_5;
+}
+
+.accordion-custom-storybook__content {
+  background-color: $WHITE_2;
+  text-align: center;
+}
