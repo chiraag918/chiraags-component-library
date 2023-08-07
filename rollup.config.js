@@ -3,6 +3,7 @@ import babel from "@rollup/plugin-babel";
 import styles from "rollup-plugin-styles";
 import commonjs from "@rollup/plugin-commonjs";
 import nodeResolve from "@rollup/plugin-node-resolve";
+import image from "@rollup/plugin-image";
 
 // the entry point for the library
 const input = "src/index.js";
@@ -40,6 +41,8 @@ var config = [
 					plugins: [autoprefixer()],
 				},
 			}),
+			// required to import svg or img files
+			image(),
 		],
 	},
 ];
