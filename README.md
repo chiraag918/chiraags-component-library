@@ -149,7 +149,7 @@ This will open the Storybook interface in your browser, allowing you to view and
 [sass](https://sass-lang.com/documentation/),
 [npm](https://www.npmjs.com/),
 
-<a name="prerequisites"></a>
+<a name="prerequesites"></a>
 
 ## Prerequisites
 
