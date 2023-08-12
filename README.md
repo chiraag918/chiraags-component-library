@@ -10,8 +10,12 @@ This is a collection of reusable React components designed to be easily distribu
 - [Usage](#usage)
 - [Local Development](#local-development)
 - [Storybook](#storybook)
+- [Frontend Libraries](#frontend-libraries)
+- [Prerequisites](#prerequesites)
 - [Contributing](#contributing)
 - [License](#license)
+
+<a name="installation"></a>
 
 ## Installation 💿
 
@@ -20,6 +24,8 @@ To install the component library, you can use npm or yarn:
 ```bash
 npm install @chiraag918/chiraags-component-library
 ```
+
+<a name="usage"></a>
 
 ## Usage 🖥️
 
@@ -85,6 +91,8 @@ const App = () => {
 export default App;
 ```
 
+<a name="local-development"></a>
+
 ## Local Development 🧑🏻‍💻
 
 To set up the local development environment and contribute to the library, follow these steps:
@@ -119,6 +127,8 @@ npm run build
 npm link
 ```
 
+<a name="storybook"></a>
+
 ## Storybook 🖼️
 
 The component library includes a Storybook to visualize and interact with the components. To start Storybook, run the following command:
@@ -129,6 +139,29 @@ npm run storybook
 
 This will open the Storybook interface in your browser, allowing you to view and test each component in isolation.
 
+<a name="frontend-libraries"></a>
+
+## Frontend Libraries
+
+[React JS(UI)](https://reactjs.org/docs/getting-started.html),
+[Rollup.js](https://rollupjs.org/guide/en/),
+[Babel](https://babeljs.io/docs/en/),
+[sass](https://sass-lang.com/documentation/),
+[npm](https://www.npmjs.com/),
+
+<a name="prerequisites"></a>
+
+## Prerequisites
+
+For local developments, the application requires NodeJS (version 18.9.0). To make sure this is available on the local machine, try running the following command:
+
+```bash
+$ node --version
+v18.9.0
+```
+
+<a name="contributing"></a>
+
 ## Contributing 🙏🏼
 
 Contributions to improve the component library are welcome. To contribute, follow these steps:
@@ -138,6 +171,8 @@ Contributions to improve the component library are welcome. To contribute, follo
 - Make your changes and commit them with a clear message.
 - Push your branch to your forked repository.
 - Open a pull request to the main repository, explaining the changes you made.
+
+<a name="license"></a>
 
 ## License
 
